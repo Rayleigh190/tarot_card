@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'CookieRun_Bold';
+    src: url('../font/CookieRun_Bold.ttf');
+}
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+
+body {
+    /* font-family: CookieRun_Bold; */
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.card_img{
+    box-shadow: 0px 10px 10px #000;
+}
+
+a:link { color: white; text-decoration: none;}
+a:visited { color: white; text-decoration: none;}
+a:hover { color: violet; text-decoration: none;}
+
+/* 버튼 스타일 */
+button,
+button::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+button {
+    background: none;
+    border: 2px solid #dabde7;
+    border-radius: 5px;
+    color: #dabde7;
+    display: block;
+    font-size: 0.6em;
+    font-weight: bold;
+    margin: 0.5em auto;
+    padding: 0.5em 1em;
+    position: relative;
+    text-transform: uppercase;
+}
+/* 버튼 모션 오류 */
+button::before,
+button::after {
+    background: #dabde7;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+button:hover {
+    color: #7c389a;
+    background: #dabde7;
+}
+/* BUTTON 3 */
+.btn-3::after {
+    height: 0;
+    left: 50%;
+    top: 50%;
+    width: 0;
+}
+.btn-3:hover:after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}

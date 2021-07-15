@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    color: #dabde7;
+}
+
+body {
+    padding: 10px;
+    font-family: Gulim;
+    background: #dabde7;
+}
+
+form {
+    float: left;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #7c389a;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #b981d1;
+}
+
+.nav a {
+    float: left;
+    color: #dabde7;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+    width: 100%;
+    /* 원래 75% */
+}
+
+.right {
+    float: left;
+    width: 25%;
+    background-color: #7c389a;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card_img {
+    width: 25%;
+    /* 20 <-> 25 */
+    height: 100%;
+    margin: 5px;
+}
+
+.card {
+    background-color: #7c389a;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.card #Mbutton {
+    margin: auto;
+    width: 70px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 1px;
+    text-align: center;
+    background: #7c389a;
+    margin-top: 20px;
+}

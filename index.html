@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tarot</title>
+    <meta charset="utf-8">
+    <meta name="title" content="Tarot Card in Online"/>
+    <meta name="description" content="Play Tarot without Smartphone or Tablet."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/web.css" />
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        /* 외부 스타일 시트 적용 */
+    </style>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/OuterJavaScript.js">// 외부 자바스크립트 적용</script>
+</head>
+
+<body>
+    <!-- header 영역 -->
+    <div class="header">
+        <h1>Online Tarot system</h1>
+    </div>
+    <!-- navigator 영역 -->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="more.html">More</a>
+    </div>
+    
+
+    <!-- main content 영역 -->
+    <div class="row">
+        <div class="left">
+            <div class="card">
+                <form>
+                    <input id="3P" type="radio" name="piece" value="3" onclick="CheckRadio()" checked="checked"  /><label for="3P"> 3cards</label> <br />
+                    <input id="5P" type="radio" name="piece" value="5" onclick="CheckRadio()"  /><label for="5P"> 5cards</label><br />
+                    <input id="MJ" type="checkbox" name="Major" checked="checked" disabled="disabled" style="margin-top: 10%;" /><label for="MJ"> Major</label><br />
+                    <input id="MN" type="checkbox" name="Minor" onclick="CheckBox()" /><label for="MN"> Minor</label>
+                    <button class="btn-3" type="button" name="shuffle" value="shuffle" onclick="CloseCard(), Shuffle_Card()" style="margin-top: 10%;" >Shuffle</button>
+                    <button class="btn-3" type="button" name="shuffle" value="shuffle" onclick="OpenCardAll()" style="margin-top: 10%;" >Open All</button>
+                </form>
+                
+                <img class="card_img" id="card0" src="http://placehold.it/100X165"  onclick="OpenCard(0)"/>
+                <img class="card_img" id="card1" src="http://placehold.it/100X165"  onclick="OpenCard(1)"/>
+                <img class="card_img" id="card2" src="http://placehold.it/195X326"  onclick="OpenCard(2)"/>
+                <img class="card_img" id="card3" src="http://placehold.it/195X326"  onclick="OpenCard(3)"/>
+                <img class="card_img" id="card4" src="http://placehold.it/195X326"  onclick="OpenCard(4)"/>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- footer 영역 -->
+    <div class="footer">
+        <blockquote>ⓒ Rayleigh. All rights reserved<br>Rayleigh190@gmail.com</blockquote>
+    </div>
+</body>
+
+</html>
